@@ -5,7 +5,7 @@ import blocksindia from '../../images/clients/blocksindia.png';
 
 
 const clientImage = {
-    height: '5rem',
+    height: '3.5rem',
     width: 'auto',
     mixBlendMode: 'colorBurn'
 }
@@ -27,15 +27,24 @@ const NavBar = () => {
     }, [top]);
 
     return (
-        <nav className={`fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 ${!top && 'bg-white shadow-lg'}`}>
-            <div className="flex flex-row justify-between items-center py-2">
-                <div className="flex flex-row justify-center md:px-12 md:mx-12 items-center text-center font-semibold">
-                <div style={clientImage} className= "overflow-hidden flex justify-center transition-all ease-in-out hover:opacity-100 w-1/6">
-                            <img src={blocksindia} alt="client" />                           
-                        </div>
-                    <HashLink smooth to="/#hero"><h1 className="font-extrabold text-4xl text-blue-950">BlocksIndia</h1></HashLink>
-                    
-                </div>
+        <nav className="fixed top-0 w-full z-30 transition duration-300 ease-in-out mb-16 bg-white/80 backdrop-blur-xl shadow-lg">
+            <div className="flex flex-row justify-between items-center py-3">
+                <HashLink smooth to="/#hero" className="flex items-center gap-3 md:px-12 md:mx-12 group">
+                    {/* Logo Image */}
+                    <div style={clientImage} className="overflow-hidden flex justify-center transition-all ease-in-out group-hover:opacity-90">
+                        <img src={blocksindia} alt="BlocksIndia" />
+                    </div>
+
+                    {/* Text */}
+                    <div className="flex flex-col">
+                        <h1 className="text-2xl md:text-3xl font-black gradient-text leading-none">
+                            BlocksIndia
+                        </h1>
+                        <span className="text-[10px] md:text-xs font-semibold text-surface-600 uppercase tracking-widest">
+                            Blockchain Validator
+                        </span>
+                    </div>
+                </HashLink>
                 <div className="group flex flex-col items-center">
                     <button className="p-2 rounded-lg lg:hidden text-zinc-900" onClick={handleClick}>
                         <svg className="h-6 w-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

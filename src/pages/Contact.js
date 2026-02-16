@@ -66,9 +66,8 @@ const Contact = () => {
         })
         .then(function (response) {
             document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
+            document.getElementById('submitBtn').innerHTML = 'Send Message';
             clearInput()
-            //handle success
             Notiflix.Report.success(
                 'Success',
                 response.data.message,
@@ -77,8 +76,7 @@ const Contact = () => {
         })
         .catch(function (error) {
             document.getElementById('submitBtn').disabled = false;
-            document.getElementById('submitBtn').innerHTML = 'send message';
-            //handle error
+            document.getElementById('submitBtn').innerHTML = 'Send Message';
             const { response } = error;
             if(response.status === 500) {
                 Notiflix.Report.failure(
@@ -90,152 +88,145 @@ const Contact = () => {
             if(response.data.errors !== null) {
                 setErrors(response.data.errors)
             }
-            
+
         });
     }
     return (
         <>
-            <div>
-                <NavBar />
+            <NavBar />
+
+            {/* Page hero strip */}
+            <div className="bg-surface-950 pt-28 pb-16">
+                <div className="max-w-7xl mx-auto px-6 text-center">
+                    <h1 className="text-3xl md:text-4xl font-extrabold text-white">Send us a message</h1>
+                    <p className="mt-3 text-surface-200/70">We would love to hear from you.</p>
+                </div>
             </div>
-            <div className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24 bg-gray-200">
-                <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
 
-                <form onSubmit={sendEmail}>
-
-                    <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-                        <div className="flex">
-                            <h1 className="font-bold text-center lg:text-left text-zinc-900 uppercase text-4xl">Send us a message</h1>
-                        </div>
-                        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+            {/* Form section */}
+            <div className="max-w-7xl mx-auto px-6 -mt-8 pb-20" data-aos="fade-up">
+                <div className="grid lg:grid-cols-3 gap-8">
+                    {/* Form card */}
+                    <div className="lg:col-span-2 bg-white rounded-2xl border border-surface-200 shadow-sm p-8 md:p-12">
+                        <form onSubmit={sendEmail}>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                 <div>
-                                    <input 
-                                        name="first_name" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="text" 
-                                        placeholder="First Name*" 
+                                    <label className="block text-sm font-medium text-surface-800 mb-2">First Name</label>
+                                    <input
+                                        name="first_name"
+                                        className="w-full px-4 py-3 rounded-xl border border-surface-200 bg-surface-50 text-surface-900 placeholder-surface-800/40 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200"
+                                        type="text"
+                                        placeholder="John"
                                         value={firstName}
                                         onChange={(e)=> setFirstName(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.first_name}</p>
+                                    {errors &&
+                                        <p className="text-red-500 text-sm mt-1">{errors.first_name}</p>
                                     }
                                 </div>
-                                
+
                                 <div>
-                                    <input 
-                                        name="last_name" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="text" 
-                                        placeholder="Last Name*"
+                                    <label className="block text-sm font-medium text-surface-800 mb-2">Last Name</label>
+                                    <input
+                                        name="last_name"
+                                        className="w-full px-4 py-3 rounded-xl border border-surface-200 bg-surface-50 text-surface-900 placeholder-surface-800/40 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200"
+                                        type="text"
+                                        placeholder="Doe"
                                         value={lastName}
                                         onChange={(e)=> setLastName(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.last_name}</p>
+                                    {errors &&
+                                        <p className="text-red-500 text-sm mt-1">{errors.last_name}</p>
                                     }
                                 </div>
 
                                 <div>
-                                    <input 
+                                    <label className="block text-sm font-medium text-surface-800 mb-2">Email</label>
+                                    <input
                                         name="email"
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="email" 
-                                        placeholder="Email*"
+                                        className="w-full px-4 py-3 rounded-xl border border-surface-200 bg-surface-50 text-surface-900 placeholder-surface-800/40 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200"
+                                        type="email"
+                                        placeholder="you@example.com"
                                         value={email}
                                         onChange={(e)=> setEmail(e.target.value)}
-                                        onKeyUp={clearErrors}   
+                                        onKeyUp={clearErrors}
                                     />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.email}</p>
+                                    {errors &&
+                                        <p className="text-red-500 text-sm mt-1">{errors.email}</p>
                                     }
                                 </div>
 
                                 <div>
+                                    <label className="block text-sm font-medium text-surface-800 mb-2">Phone</label>
                                     <input
-                                        name="phone_number" 
-                                        className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                        type="number" 
-                                        placeholder="Phone*"
+                                        name="phone_number"
+                                        className="w-full px-4 py-3 rounded-xl border border-surface-200 bg-surface-50 text-surface-900 placeholder-surface-800/40 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200"
+                                        type="number"
+                                        placeholder="+1 (555) 000-0000"
                                         value={phone}
                                         onChange={(e)=> setPhone(e.target.value)}
                                         onKeyUp={clearErrors}
                                     />
-                                    {errors && 
-                                        <p className="text-red-500 text-sm">{errors.phone_number}</p>
+                                    {errors &&
+                                        <p className="text-red-500 text-sm mt-1">{errors.phone_number}</p>
                                     }
                                 </div>
-                        </div>
-                        <div className="my-4">
-                            <textarea 
-                                name="message" 
-                                placeholder="Message*" 
-                                className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                                value={message}
-                                onChange={(e)=> setMessage(e.target.value)}
-                                onKeyUp={clearErrors}
-                            ></textarea>
-                            {errors && 
-                                <p className="text-red-500 text-sm">{errors.message}</p>
-                            }
-                        </div>
-                        <div className="my-2 w-1/2 lg:w-2/4">
-                            <button type="submit" id="submitBtn" className="uppercase text-sm font-bold tracking-wide bg-gray-500 hover:bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
-                                    focus:outline-none focus:shadow-outline">
+                            </div>
+
+                            <div className="mt-5">
+                                <label className="block text-sm font-medium text-surface-800 mb-2">Message</label>
+                                <textarea
+                                    name="message"
+                                    placeholder="Your message..."
+                                    className="w-full px-4 py-3 rounded-xl border border-surface-200 bg-surface-50 text-surface-900 placeholder-surface-800/40 focus:outline-none focus:ring-2 focus:ring-primary-500/20 focus:border-primary-500 transition-all duration-200 h-36 resize-none"
+                                    value={message}
+                                    onChange={(e)=> setMessage(e.target.value)}
+                                    onKeyUp={clearErrors}
+                                ></textarea>
+                                {errors &&
+                                    <p className="text-red-500 text-sm mt-1">{errors.message}</p>
+                                }
+                            </div>
+
+                            <button type="submit" id="submitBtn" className="mt-6 inline-flex items-center px-8 py-3.5 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl transition-all duration-200 shadow-md shadow-primary-500/25 hover:shadow-lg hover:shadow-primary-500/30">
                                 Send Message
                             </button>
-                        </div>
-                </div>
-                </form>
-                        <div
-                            className="w-full  lg:-mt-96 lg:w-2/6 px-8 py-6 ml-auto bg-blue-900 rounded-2xl">
-                            <div className="flex flex-col text-white">
-                                
-                                <div className="flex my-4 w-2/3 lg:w-3/4">
-                                    <div className="flex flex-col">
-                                        <i className="fas fa-map-marker-alt pt-2 pr-2" />
-                                    </div>
-                                    <div className="flex flex-col">
-                                        <h2 className="text-2xl">Office Address</h2>
-                                        <p className="text-gray-400">Bangalore, India, 560103</p>
-                                    </div>
-                                </div>
-                    
-                    <div className="flex my-4 w-2/3 lg:w-1/2">
-                        <div className="flex flex-col">
-                        <i className="fas fa-phone-alt pt-2 pr-2" />
-                        </div>
+                        </form>
+                    </div>
 
-                        <div className="flex flex-col">
-                        <h2 className="text-2xl">Call Us</h2>
-                        <p className="text-gray-400">Tel: 08055384406</p>
-                        
-                            <div className='mt-5'>
-                                <h2 className="text-2xl">Send an E-mail</h2>
-                                <p className="text-gray-400">contact@blocksindia.com</p>
+                    {/* Contact info sidebar */}
+                    <div className="bg-surface-950 rounded-2xl p-8 text-white flex flex-col justify-between">
+                        <div className="space-y-8">
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2">Office Address</h3>
+                                <p className="text-surface-200/70 text-sm">Bangalore, India, 560103</p>
                             </div>
-                       
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2">Call Us</h3>
+                                <p className="text-surface-200/70 text-sm">Tel: 08055384406</p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2">Email</h3>
+                                <p className="text-surface-200/70 text-sm">contact@blocksindia.com</p>
+                            </div>
+                        </div>
+                        <div className="flex gap-3 mt-8">
+                            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer"
+                                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors duration-200" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='fill-current'><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer"
+                                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors duration-200" aria-label="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='fill-current'><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                            </a>
                         </div>
                     </div>
-                    
-                    <div className="flex my-4 w-2/3 lg:w-1/2">
-                        <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 inline-block mx-1 text-center pt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
-                        </a>
-                        <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 inline-block mx-1 text-center pt-1">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
-                        </a>
-                    </div>
-                    </div>
-                </div>
                 </div>
             </div>
             <Footer />
         </>
-
-
     )
 }
 

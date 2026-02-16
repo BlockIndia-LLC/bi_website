@@ -126,23 +126,12 @@ const DemoProduct = (props) => {
                             <div className="flex">
                                 <h1 className="font-bold text-center lg:text-left text-zinc-900 uppercase text-4xl">Demo our products</h1>
                             </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
-                                    value="business_management_system" onChange={handleChange}
-                                 />
-                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">DeFi Application Development</label>
-                            </div>
-                            <div className="flex items-center my-4">
-                                <input 
-                                    id="checkbox-1" 
-                                    aria-describedby="checkbox-1" 
-                                    type="checkbox" 
-                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
-                                    value="school_management_portal" onChange={handleChange}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+                                <label className="flex items-center gap-3 p-3 rounded-xl border border-surface-200 hover:border-primary-200 hover:bg-primary-50/50 transition-all duration-200 cursor-pointer">
+                                    <input
+                                        type="checkbox"
+                                        className="w-5 h-5 rounded-lg border-surface-300 text-primary-600 focus:ring-primary-500/20 focus:ring-2"
+                                        value="defi_application_development" onChange={handleChange}
                                     />
                                     <span className="text-sm font-medium text-surface-800">DeFi Application Development</span>
                                 </label>
@@ -150,7 +139,7 @@ const DemoProduct = (props) => {
                                     <input
                                         type="checkbox"
                                         className="w-5 h-5 rounded-lg border-surface-300 text-primary-600 focus:ring-primary-500/20 focus:ring-2"
-                                        value="school_management_portal" onChange={handleChange}
+                                        value="nft_marketplaces" onChange={handleChange}
                                     />
                                     <span className="text-sm font-medium text-surface-800">NFT Marketplaces</span>
                                 </label>
@@ -158,7 +147,7 @@ const DemoProduct = (props) => {
                                     <input
                                         type="checkbox"
                                         className="w-5 h-5 rounded-lg border-surface-300 text-primary-600 focus:ring-primary-500/20 focus:ring-2"
-                                        value="payroll_management_system" onChange={handleChange}
+                                        value="blockchain_games" onChange={handleChange}
                                     />
                                     <span className="text-sm font-medium text-surface-800">Blockchain Games</span>
                                 </label>
@@ -166,7 +155,7 @@ const DemoProduct = (props) => {
                                     <input
                                         type="checkbox"
                                         className="w-5 h-5 rounded-lg border-surface-300 text-primary-600 focus:ring-primary-500/20 focus:ring-2"
-                                        value="event_management_system" onChange={handleChange}
+                                        value="smart_contract_development" onChange={handleChange}
                                     />
                                     <span className="text-sm font-medium text-surface-800">Smart Contract Development</span>
                                 </label>
@@ -259,41 +248,8 @@ const DemoProduct = (props) => {
                             <button type="submit" id="submitBtn" className="mt-6 inline-flex items-center px-8 py-3.5 text-base font-semibold text-white bg-primary-600 hover:bg-primary-700 rounded-xl transition-all duration-200 shadow-md shadow-primary-500/25 hover:shadow-lg hover:shadow-primary-500/30">
                                 Send Message
                             </button>
-                        </form>
-                    </div>
-
-                    {/* Contact info sidebar */}
-                    <div className="bg-surface-950 rounded-2xl p-8 text-white flex flex-col justify-between">
-                        <div className="space-y-8">
-                            <div>
-                                <h3 className="font-semibold text-lg mb-2">Office Address</h3>
-                                <p className="text-surface-200/70 text-sm">Bangalore, India, 560103</p>
-                            </div>
-                            
-                            <div className="flex my-4 w-2/3 lg:w-1/2">
-                                <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 mx-1 text-center pt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
-                                </a>
-                                <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 mx-1 text-center pt-1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
-                                </a>
-                            </div>
-                            <div>
-                                <h3 className="font-semibold text-lg mb-2">Email</h3>
-                                <p className="text-surface-200/70 text-sm">contact@blocksindia.com</p>
-                            </div>
                         </div>
-                        <div className="flex gap-3 mt-8">
-                            <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer"
-                                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors duration-200" aria-label="Facebook">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='fill-current'><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
-                            </a>
-                            <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer"
-                                className="w-10 h-10 rounded-xl bg-white/5 hover:bg-white/10 flex items-center justify-center transition-colors duration-200" aria-label="LinkedIn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className='fill-current'><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <Footer />

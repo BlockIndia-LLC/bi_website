@@ -119,20 +119,30 @@ const DemoProduct = (props) => {
                     <p className="mt-3 text-surface-200/70">Select the products you're interested in and we'll get back to you.</p>
                 </div>
             </div>
-
-            {/* Form section */}
-            <div className="max-w-7xl mx-auto px-6 -mt-8 pb-20" data-aos="fade-up">
-                <div className="grid lg:grid-cols-3 gap-8">
-                    {/* Form card */}
-                    <div className="lg:col-span-2 bg-white rounded-2xl border border-surface-200 shadow-sm p-8 md:p-12">
-                        <form onSubmit={sendEmail} id="demoProductForm">
-                            <h3 className="text-lg font-semibold text-surface-900 mb-4">Select products</h3>
-                            <div className="grid sm:grid-cols-2 gap-3 mb-6">
-                                <label className="flex items-center gap-3 p-3 rounded-xl border border-surface-200 hover:border-primary-200 hover:bg-primary-50/50 transition-all duration-200 cursor-pointer">
-                                    <input
-                                        type="checkbox"
-                                        className="w-5 h-5 rounded-lg border-surface-300 text-primary-600 focus:ring-primary-500/20 focus:ring-2"
-                                        value="business_management_system" onChange={handleChange}
+            <div id='demo' className="flex justify-center items-center mt-8 w-full bg-white py-12 lg:py-24">
+                <div className="container mx-auto my-8 px-4 lg:px-20" data-aos="zoom-in">
+                    <form onSubmit={sendEmail} id="demoProductForm">
+                        <div className="w-full bg-white p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                            <div className="flex">
+                                <h1 className="font-bold text-center lg:text-left text-zinc-900 uppercase text-4xl">Demo our products</h1>
+                            </div>
+                            <div className="flex items-center my-4">
+                                <input 
+                                    id="checkbox-1" 
+                                    aria-describedby="checkbox-1" 
+                                    type="checkbox" 
+                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded" 
+                                    value="business_management_system" onChange={handleChange}
+                                 />
+                                <label htmlFor="checkbox-1" className="ml-3 text-lg font-medium text-gray-900">DeFi Application Development</label>
+                            </div>
+                            <div className="flex items-center my-4">
+                                <input 
+                                    id="checkbox-1" 
+                                    aria-describedby="checkbox-1" 
+                                    type="checkbox" 
+                                    className="bg-gray-50 border-gray-300 focus:ring-3 focus:ring-blue-300 h-4 w-4 rounded"
+                                    value="school_management_portal" onChange={handleChange}
                                     />
                                     <span className="text-sm font-medium text-surface-800">DeFi Application Development</span>
                                 </label>
@@ -259,9 +269,14 @@ const DemoProduct = (props) => {
                                 <h3 className="font-semibold text-lg mb-2">Office Address</h3>
                                 <p className="text-surface-200/70 text-sm">Bangalore, India, 560103</p>
                             </div>
-                            <div>
-                                <h3 className="font-semibold text-lg mb-2">Call Us</h3>
-                                <p className="text-surface-200/70 text-sm">Tel: 08055384406</p>
+                            
+                            <div className="flex my-4 w-2/3 lg:w-1/2">
+                                <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 mx-1 text-center pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path></svg>
+                                </a>
+                                <a href="https://www.linkedin.com/company/enlighteneering-inc-" target="_blank" rel="noreferrer" className="rounded-full flex justify-center bg-white h-8 text-zinc-900  w-8 mx-1 text-center pt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className='fill-current font-black hover:animate-pulse'><circle cx="4.983" cy="5.009" r="2.188"></circle><path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path></svg>
+                                </a>
                             </div>
                             <div>
                                 <h3 className="font-semibold text-lg mb-2">Email</h3>

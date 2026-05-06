@@ -7,6 +7,7 @@ import Intro from '../components/Intro';
 import Portfolio from '../components/Portfolio';
 import Services from '../components/Services';
 import Stats from '../components/Stats';
+import XprBuilds from '../components/XprBuilds';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Stats />
             <Intro />
             <Services />
+            <XprBuilds />
             <Portfolio />
             <Clients />
             <Cta/>

@@ -35,7 +35,7 @@ const Hero = () => {
                         {/* Terminal-style status line */}
                         <div className="inline-flex items-center gap-2 mb-6 font-mono text-xs text-green-400/80">
                             <span className="status-live" />
-                            <span>$ blocksindia --status <span className="text-white/30">// all networks operational</span></span>
+                            <span>$ blocksindia --status <span className="text-white/30">{'// all networks operational'}</span></span>
                         </div>
 
                         <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-white leading-[1.1] tracking-tight mb-4">

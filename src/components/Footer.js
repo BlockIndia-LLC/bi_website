@@ -24,7 +24,7 @@ const Footer = () => {
 
                     {/* Links */}
                     <div>
-                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">// Links</h4>
+                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">{'// Links'}</h4>
                         <ul className="space-y-2.5 font-mono text-xs">
                             <li><HashLink to="/#about"    className="hover:text-green-400 transition-colors duration-200">About</HashLink></li>
                             <li><HashLink to="/#services" className="hover:text-green-400 transition-colors duration-200">Services</HashLink></li>
@@ -34,7 +34,7 @@ const Footer = () => {
 
                     {/* Services */}
                     <div>
-                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">// Services</h4>
+                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">{'// Services'}</h4>
                         <ul className="space-y-2.5 font-mono text-xs">
                             <li><HashLink to="/#services" className="hover:text-green-400 transition-colors duration-200">Blockchain Development</HashLink></li>
                             <li><HashLink to="/#services" className="hover:text-green-400 transition-colors duration-200">DApps Development</HashLink></li>
@@ -45,7 +45,7 @@ const Footer = () => {
 
                     {/* Social */}
                     <div>
-                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">// Connect</h4>
+                        <h4 className="font-mono text-[10px] text-white/25 uppercase tracking-widest mb-4">{'// Connect'}</h4>
                         <p className="font-mono text-xs mb-4">Follow us on social media.</p>
                         <div className="flex gap-2">
                             <a href="https://www.facebook.com/ENLIGHTENEERING/" target="_blank" rel="noreferrer"
@@ -63,7 +63,7 @@ const Footer = () => {
                 {/* Bottom bar */}
                 <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-[11px] text-white/20">
                     <span>Copyright &copy; {new Date().getFullYear()} Blocksindia. All rights reserved.</span>
-                    <span className="text-green-400/30">// built on blockchain principles</span>
+                    <span className="text-green-400/30">{'// built on blockchain principles'}</span>
                 </div>
             </div>
         </footer>

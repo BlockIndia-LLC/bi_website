@@ -9,6 +9,7 @@ const NavLinks = () => {
             <HashLink className={linkCls} smooth to="/#about">About</HashLink>
             <HashLink className={linkCls} smooth to="/#services">Services</HashLink>
             <HashLink className={linkCls} smooth to="/#portfolio">Portfolio</HashLink>
+            <HashLink className={linkCls} to="/networks/xpr">Networks</HashLink>
             <HashLink className={linkCls} to="/contact">Contact</HashLink>
             <HashLink
                 className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 hover:bg-orange-400 rounded-lg transition-colors duration-200 font-mono"

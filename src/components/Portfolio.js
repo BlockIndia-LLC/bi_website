@@ -1,6 +1,6 @@
 import React from 'react';
 
-const products = [
+export const products = [
     {
         cmd: '--voter-intel',
         title: 'XPR Voter Intelligence',

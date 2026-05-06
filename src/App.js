@@ -11,6 +11,7 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
+import NetworkXpr from './pages/NetworkXpr';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -41,6 +42,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} />
+            <Route path="/networks/xpr" element={<NetworkXpr />} />
           </Routes>
         </ScrollToTop>
       </Router>

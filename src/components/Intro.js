@@ -12,9 +12,9 @@ const networkMetrics = [
 
 const Intro = () => {
     return (
-        <section className="py-20 lg:py-28 bg-surface-950" id="about">
+        <section className="py-12 lg:py-16 bg-surface-950" id="about">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col-reverse lg:flex-row items-start gap-14" data-aos="fade-up">
+                <div className="flex flex-col-reverse lg:flex-row items-start gap-10" data-aos="fade-up">
 
                     {/* Left — Performance metrics panel */}
                     <div className="lg:w-1/2 w-full">

@@ -11,10 +11,10 @@ const NavLinks = () => {
             <HashLink className={linkCls} smooth to="/#portfolio">Portfolio</HashLink>
             <HashLink className={linkCls} to="/contact">Contact</HashLink>
             <HashLink
-                className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-black bg-green-400 hover:bg-green-300 rounded-lg transition-colors duration-200 font-mono"
+                className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 hover:bg-orange-400 rounded-lg transition-colors duration-200 font-mono"
                 smooth to="/get-demo#demo"
             >
-                <span className="w-1.5 h-1.5 rounded-full bg-black/50" />
+                <span className="w-1.5 h-1.5 rounded-full bg-white/50" />
                 get-demo
             </HashLink>
         </>

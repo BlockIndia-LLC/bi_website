@@ -5,10 +5,10 @@ import { HashLink } from 'react-router-hash-link';
 const Footer = () => {
     return (
         <footer className="bg-surface-950 border-t border-white/5 text-white/40">
-            <div className="max-w-7xl mx-auto px-6 pt-14 pb-8">
+            <div className="max-w-7xl mx-auto px-6 pt-10 pb-6">
 
                 {/* Top row */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
 
                     {/* Brand */}
                     <div className="lg:col-span-1">

@@ -26,8 +26,8 @@ const Hero = () => {
 
             <NavBar />
 
-            <div className="relative max-w-7xl mx-auto px-6 pt-32 pb-20 lg:pt-40 lg:pb-32">
-                <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+            <div className="relative max-w-7xl mx-auto px-6 pt-28 pb-10 lg:pt-32 lg:pb-16">
+                <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
 
                     {/* Left — Text */}
                     <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-up">
@@ -50,7 +50,7 @@ const Hero = () => {
 
                         <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                             <Link to="/contact"
-                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold font-mono text-black bg-green-400 hover:bg-green-300 rounded-lg transition-all duration-200 shadow-lg shadow-green-400/20">
+                                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 text-sm font-semibold font-mono text-white bg-orange-500 hover:bg-orange-400 rounded-lg transition-all duration-200 shadow-lg shadow-orange-500/25">
                                 $ get-started
                                 <svg className="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
                             </Link>

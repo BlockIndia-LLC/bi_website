@@ -49,11 +49,11 @@ const services = [
 
 const Services = () => {
     return (
-        <div id="services" className="py-20 lg:py-28 bg-surface-950">
+        <div id="services" className="py-12 lg:py-16 bg-surface-950">
             <section>
                 <div className="max-w-7xl mx-auto px-6">
                     {/* Header */}
-                    <div className="mb-14" data-aos="fade-up">
+                    <div className="mb-10" data-aos="fade-up">
                         <span className="section-label">$ blocksindia --services</span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
                             What we <span className="gradient-text">execute</span>
@@ -67,18 +67,18 @@ const Services = () => {
                                 key={index}
                                 data-aos="fade-up"
                                 data-aos-delay={index * 80}
-                                className="group relative rounded-xl border border-white/[0.07] bg-white/[0.03] hover:border-green-500/30 hover:bg-green-500/[0.03] transition-all duration-400 p-5 flex flex-col overflow-hidden"
+                                className="group relative rounded-xl border border-white/[0.07] bg-white/[0.03] hover:border-orange-500/30 hover:bg-orange-500/[0.03] transition-all duration-400 p-5 flex flex-col overflow-hidden"
                             >
-                                {/* Top green glow line on hover */}
-                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-400/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
+                                {/* Top glow line on hover */}
+                                <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
 
                                 {/* Command label */}
-                                <span className="font-mono text-[10px] text-green-400/50 group-hover:text-green-400/80 transition-colors mb-3 uppercase tracking-widest">
+                                <span className="font-mono text-[10px] text-orange-400/50 group-hover:text-orange-400/80 transition-colors mb-3 uppercase tracking-widest">
                                     {service.cmd}
                                 </span>
 
                                 {/* Icon */}
-                                <div className="w-9 h-9 rounded-lg border border-white/10 group-hover:border-green-500/30 bg-white/5 group-hover:bg-green-500/10 flex items-center justify-center text-white/40 group-hover:text-green-400 transition-all duration-300 mb-4">
+                                <div className="w-9 h-9 rounded-lg border border-white/10 group-hover:border-orange-500/30 bg-white/5 group-hover:bg-orange-500/10 flex items-center justify-center text-white/40 group-hover:text-orange-400 transition-all duration-300 mb-4">
                                     {service.icon}
                                 </div>
 
@@ -95,7 +95,7 @@ const Services = () => {
                                 {/* Tags */}
                                 <div className="flex flex-wrap gap-1.5">
                                     {service.tags.map((tag, i) => (
-                                        <span key={i} className="px-2 py-0.5 rounded font-mono text-[10px] text-white/30 border border-white/[0.07] group-hover:border-green-500/20 group-hover:text-green-400/70 transition-all duration-300">
+                                        <span key={i} className="px-2 py-0.5 rounded font-mono text-[10px] text-white/30 border border-white/[0.07] group-hover:border-orange-500/20 group-hover:text-orange-400/70 transition-all duration-300">
                                             {tag}
                                         </span>
                                     ))}
@@ -110,15 +110,15 @@ const Services = () => {
             <section>
                 <div className="max-w-7xl mx-auto px-6 pt-12">
                     <div className="grid sm:grid-cols-2 gap-4" data-aos="fade-up">
-                        <div className="rounded-xl border border-white/[0.07] hover:border-green-500/20 bg-white/[0.02] p-6 md:p-8 group transition-all duration-400">
-                            <div className="font-mono text-xs text-green-400/50 mb-3">$ we --build</div>
+                        <div className="rounded-xl border border-white/[0.07] hover:border-orange-500/20 bg-white/[0.02] p-6 md:p-8 group transition-all duration-400">
+                            <div className="font-mono text-xs text-orange-400/50 mb-3">$ we --build</div>
                             <h3 className="text-lg text-white font-bold mb-2">We Build</h3>
                             <p className="text-sm text-white/40 leading-relaxed">
                                 A decade of engineering distilled into blockchain-native solutions. Systems that scale, optimized costs, no shortcuts on security.
                             </p>
                         </div>
-                        <div className="rounded-xl border border-white/[0.07] hover:border-green-500/20 bg-white/[0.02] p-6 md:p-8 group transition-all duration-400">
-                            <div className="font-mono text-xs text-green-400/50 mb-3">$ we --collaborate</div>
+                        <div className="rounded-xl border border-white/[0.07] hover:border-orange-500/20 bg-white/[0.02] p-6 md:p-8 group transition-all duration-400">
+                            <div className="font-mono text-xs text-orange-400/50 mb-3">$ we --collaborate</div>
                             <h3 className="text-lg text-white font-bold mb-2">We Collaborate</h3>
                             <p className="text-sm text-white/40 leading-relaxed">
                                 Already have a team? We embed with your engineers — scaling platforms, auditing contracts, or building new features from scratch.

@@ -19,11 +19,11 @@ const Stats = () => {
 
                 <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-white/5" data-aos="fade-up">
                     {stats.map((stat) => (
-                        <div key={stat.key} className="py-8 px-6 flex flex-col gap-1 group">
+                        <div key={stat.key} className="py-5 px-6 flex flex-col gap-1 group">
                             <span className="text-[10px] font-mono text-white/25 uppercase tracking-widest">
                                 {stat.key}
                             </span>
-                            <span className="text-3xl md:text-4xl font-extrabold font-mono text-green-400 leading-none group-hover:text-green-300 transition-colors duration-300">
+                            <span className="text-3xl md:text-4xl font-extrabold font-mono text-orange-400 leading-none group-hover:text-orange-300 transition-colors duration-300">
                                 {stat.value}
                             </span>
                             <span className="text-xs font-mono text-white/40 mt-0.5">

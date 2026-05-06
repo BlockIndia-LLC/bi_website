@@ -20,8 +20,8 @@ const track = [...logos, ...logos];
 
 const Clients = () => {
     return (
-        <section className="py-16 bg-surface-950 border-y border-white/5" data-aos="fade-up">
-            <div className="max-w-7xl mx-auto px-6 mb-10">
+        <section className="py-10 bg-surface-950 border-y border-white/5" data-aos="fade-up">
+            <div className="max-w-7xl mx-auto px-6 mb-6">
                 <span className="section-label">$ blocksindia --networks</span>
                 <h2 className="text-2xl md:text-3xl font-extrabold text-white">
                     Validator <span className="gradient-text">Networks</span>

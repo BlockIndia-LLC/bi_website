@@ -55,10 +55,10 @@ const products = [
 
 const Portfolio = () => {
     return (
-        <section className="py-20 lg:py-28 bg-surface-950" id="portfolio">
+        <section className="py-12 lg:py-16 bg-surface-950" id="portfolio">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Header */}
-                <div className="mb-14" data-aos="fade-up">
+                <div className="mb-10" data-aos="fade-up">
                     <span className="section-label">$ blocksindia --products</span>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-white">
                         Built for the <span className="gradient-text">decentralized era</span>
@@ -72,18 +72,18 @@ const Portfolio = () => {
                             key={index}
                             data-aos="fade-up"
                             data-aos-delay={index * 80}
-                            className="group relative bg-white/[0.02] rounded-xl border border-white/[0.07] hover:border-green-500/30 p-5 flex flex-col transition-all duration-300 overflow-hidden"
+                            className="group relative bg-white/[0.02] rounded-xl border border-white/[0.07] hover:border-orange-500/30 p-5 flex flex-col transition-all duration-300 overflow-hidden"
                         >
                             {/* Top glow line */}
-                            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-green-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-orange-400/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                             {/* Command */}
-                            <span className="font-mono text-[10px] text-green-400/40 group-hover:text-green-400/70 transition-colors mb-3 uppercase tracking-widest">
+                            <span className="font-mono text-[10px] text-orange-400/40 group-hover:text-orange-400/70 transition-colors mb-3 uppercase tracking-widest">
                                 {product.cmd}
                             </span>
 
                             {/* Icon */}
-                            <div className="w-9 h-9 rounded-lg border border-white/10 group-hover:border-green-500/30 bg-white/5 group-hover:bg-green-500/10 flex items-center justify-center text-white/40 group-hover:text-green-400 transition-all duration-300 mb-3">
+                            <div className="w-9 h-9 rounded-lg border border-white/10 group-hover:border-orange-500/30 bg-white/5 group-hover:bg-orange-500/10 flex items-center justify-center text-white/40 group-hover:text-orange-400 transition-all duration-300 mb-3">
                                 {product.icon}
                             </div>
 
@@ -105,7 +105,7 @@ const Portfolio = () => {
                             {/* Features */}
                             <div className="flex flex-wrap gap-1.5 mb-4">
                                 {product.features.map((feature, i) => (
-                                    <span key={i} className="px-2 py-0.5 font-mono text-[10px] text-white/30 border border-white/[0.07] group-hover:border-green-500/20 group-hover:text-green-400/60 rounded transition-all duration-300">
+                                    <span key={i} className="px-2 py-0.5 font-mono text-[10px] text-white/30 border border-white/[0.07] group-hover:border-orange-500/20 group-hover:text-orange-400/60 rounded transition-all duration-300">
                                         {feature}
                                     </span>
                                 ))}

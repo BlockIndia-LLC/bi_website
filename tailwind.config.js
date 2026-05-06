@@ -5,19 +5,24 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Primary: green scale (replaces indigo)
+        // Primary: saffron scale (Indian flag)
         primary: {
-          50:  '#f0fdf4',
-          100: '#dcfce7',
-          200: '#bbf7d0',
-          300: '#86efac',
-          400: '#4ade80',
-          500: '#22c55e',
-          600: '#16a34a',
-          700: '#15803d',
-          800: '#166534',
-          900: '#14532d',
-          950: '#052e16',
+          50:  '#fff7ed',
+          100: '#ffedd5',
+          200: '#fed7aa',
+          300: '#fdba74',
+          400: '#fb923c',
+          500: '#f97316',
+          600: '#ea6c0a',
+          700: '#c2560a',
+          800: '#9a3d08',
+          900: '#7c3206',
+          950: '#431704',
+        },
+        saffron: {
+          400: '#FF9933',
+          500: '#e8851a',
+          600: '#cc7400',
         },
         surface: {
           50:  '#f8fafc',

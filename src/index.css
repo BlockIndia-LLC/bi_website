@@ -55,6 +55,24 @@
     @apply inline-block w-2 h-4 bg-green-400 align-middle;
     animation: blink 1s step-end infinite;
   }
+
+  /* Privacy policy prose */
+  .prose-policy p {
+    @apply text-sm text-white/50 leading-relaxed mb-3;
+  }
+  .prose-policy ul {
+    @apply space-y-2 mb-3 ml-1;
+  }
+  .prose-policy ul li {
+    @apply text-sm text-white/50 leading-relaxed pl-4 relative;
+  }
+  .prose-policy ul li::before {
+    content: '›';
+    @apply absolute left-0 text-orange-400/60 font-mono;
+  }
+  .prose-policy strong {
+    @apply text-white/75 font-semibold;
+  }
 }
 
 /* ── Animations ──────────────────────────────────── */

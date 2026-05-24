@@ -63,7 +63,10 @@ const Footer = () => {
                 {/* Bottom bar */}
                 <div className="border-t border-white/5 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-[11px] text-white/20">
                     <span>Copyright &copy; {new Date().getFullYear()} Blocksindia. All rights reserved.</span>
-                    <span className="text-green-400/30">{'// built on blockchain principles'}</span>
+                    <div className="flex items-center gap-4">
+                        <Link to="/privacy-policy" className="hover:text-white/50 transition-colors duration-200">Privacy Policy</Link>
+                        <span className="text-green-400/30">{'// built on blockchain principles'}</span>
+                    </div>
                 </div>
             </div>
         </footer>

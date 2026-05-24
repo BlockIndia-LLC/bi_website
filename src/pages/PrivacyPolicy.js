@@ -16,9 +16,10 @@ const sections = [
                     <li><strong>Usage data</strong> — which features you use, how often, and how long sessions last.</li>
                     <li><strong>Device information</strong> — device model, operating system version, and language settings.</li>
                     <li><strong>Crash reports</strong> — error logs and diagnostics to help us fix bugs.</li>
-                    <li><strong>Blockchain identifiers</strong> — if you connect a wallet, we may read your public wallet address. We never access private keys or sign transactions without your explicit action.</li>
+                    <li><strong>Blockchain identifiers</strong> (blockchain apps only) — if you connect a wallet, we may read your public wallet address. We never access private keys or sign transactions without your explicit action.</li>
                 </ul>
-                <p>We do <strong>not</strong> collect your name, email, phone number, or any personally identifiable information unless you voluntarily provide it through a contact form.</p>
+                <p>Apps such as <strong>Old Tamil Songs Radios</strong> do not require account registration or login and do not collect any personally identifiable information.</p>
+                <p>We do <strong>not</strong> collect your name, email, phone number, or personal data unless you voluntarily provide it through a contact form.</p>
             </>
         ),
     },
@@ -183,12 +184,12 @@ const PrivacyPolicy = () => {
                     </div>
 
                     <p className="mt-4 text-sm text-white/40 font-mono leading-relaxed max-w-2xl">
-                        {'>'} This policy explains what data our apps collect, how we use it, and your rights. Written in plain English — no legal jargon.
+                        {'>'} This Privacy Policy is published by <span className="text-white/70">BlocksIndia</span> and applies to all apps and services we develop, including <span className="text-white/70">Old Tamil Songs Radios</span> and our XPR Network tools. It explains what data we collect, how we use it, and your rights — in plain English.
                     </p>
 
                     {/* Scope chips */}
                     <div className="flex flex-wrap gap-2 mt-5">
-                        {['Android Apps', 'blocksindia.com', 'XPR Tools'].map((label) => (
+                        {['Old Tamil Songs Radios', 'XPR Tools', 'blocksindia.com'].map((label) => (
                             <span key={label} className="px-3 py-1 rounded-full border border-white/[0.07] bg-white/[0.02] font-mono text-[10px] text-white/35 uppercase tracking-wider">
                                 {label}
                             </span>
@@ -217,7 +218,7 @@ const PrivacyPolicy = () => {
                     </span>
                     <div>
                         <p className="text-xs font-mono text-white/50 leading-relaxed">
-                            This policy applies to all apps and tools published under <span className="text-white/70">BlocksIndia</span> and <span className="text-white/70">ProtonIND</span>. If you have a question not covered here, use the <Link to="/contact" className="text-orange-400 hover:text-orange-300 underline">contact page</Link>.
+                            This policy is published by <span className="text-white/70">BlocksIndia</span> (developer on Google Play) and covers all apps including <span className="text-white/70">Old Tamil Songs Radios</span> and our XPR Network tools. Questions? <Link to="/contact" className="text-orange-400 hover:text-orange-300 underline">Contact us</Link> or email <a href="mailto:contact@blocksindia.com" className="text-orange-400 hover:text-orange-300 underline">contact@blocksindia.com</a>.
                         </p>
                     </div>
                 </div>

@@ -112,6 +112,7 @@ const sections = [
             <>
                 <p>If you have questions or concerns about this Privacy Policy or our data practices, please reach out:</p>
                 <ul>
+                    <li><strong>Email:</strong> <a href="mailto:contact@blocksindia.com" className="text-orange-400 hover:text-orange-300 underline">contact@blocksindia.com</a></li>
                     <li><strong>Website:</strong> <Link to="/contact" className="text-orange-400 hover:text-orange-300 underline">blocksindia.com/contact</Link></li>
                     <li><strong>Location:</strong> Bangalore, Karnataka, India 560013</li>
                 </ul>

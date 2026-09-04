@@ -184,12 +184,12 @@ const PrivacyPolicy = () => {
                     </div>
 
                     <p className="mt-4 text-sm text-white/40 font-mono leading-relaxed max-w-2xl">
-                        {'>'} This Privacy Policy is published by <span className="text-white/70">BlocksIndia</span> and applies to all apps and services we develop, including <span className="text-white/70">Old Tamil Songs Radios</span> and our XPR Network tools. It explains what data we collect, how we use it, and your rights — in plain English.
+                        {'>'} This Privacy Policy is published by <span className="text-white/70">BlocksIndia (FreakApps Studio on Google Play)</span> and applies to all apps and services we develop, including <span className="text-white/70">Old Tamil Songs Radios, Madha Radio, RC Christian Radio</span>, and our XPR Network tools. It explains what data we collect, how we use it, and your rights — in plain English.
                     </p>
 
                     {/* Scope chips */}
                     <div className="flex flex-wrap gap-2 mt-5">
-                        {['Old Tamil Songs Radios', 'XPR Tools', 'blocksindia.com'].map((label) => (
+                        {['Old Tamil Songs Radios', 'Madha Radio', 'RC Christian Radio', 'XPR Tools', 'blocksindia.com'].map((label) => (
                             <span key={label} className="px-3 py-1 rounded-full border border-white/[0.07] bg-white/[0.02] font-mono text-[10px] text-white/35 uppercase tracking-wider">
                                 {label}
                             </span>
@@ -218,7 +218,7 @@ const PrivacyPolicy = () => {
                     </span>
                     <div>
                         <p className="text-xs font-mono text-white/50 leading-relaxed">
-                            This policy is published by <span className="text-white/70">BlocksIndia</span> (developer on Google Play) and covers all apps including <span className="text-white/70">Old Tamil Songs Radios</span> and our XPR Network tools. Questions? <Link to="/contact" className="text-orange-400 hover:text-orange-300 underline">Contact us</Link> or email <a href="mailto:contact@blocksindia.com" className="text-orange-400 hover:text-orange-300 underline">contact@blocksindia.com</a>.
+                            This policy is published by <span className="text-white/70">BlocksIndia (FreakApps Studio on Google Play)</span> and covers all apps including <span className="text-white/70">Old Tamil Songs Radios, Madha Radio, RC Christian Radio</span>, and our XPR Network tools. Questions? <Link to="/contact" className="text-orange-400 hover:text-orange-300 underline">Contact us</Link> or email <a href="mailto:contact@blocksindia.com" className="text-orange-400 hover:text-orange-300 underline">contact@blocksindia.com</a>.
                         </p>
                     </div>
                 </div>

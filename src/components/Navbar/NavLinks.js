@@ -1,26 +1,25 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
+const linkCls = 'px-4 py-2 text-sm font-medium text-white/60 hover:text-white transition-colors duration-200 relative after:absolute after:bottom-0 after:left-4 after:right-4 after:h-px after:bg-green-400 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left';
+
 const NavLinks = () => {
     return (
         <>
-            <HashLink className="px-4 py-2 text-sm font-medium text-surface-800 hover:text-primary-600 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" smooth to="/#about">
-                About
-            </HashLink>
-            <HashLink className="px-4 py-2 text-sm font-medium text-surface-800 hover:text-primary-600 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" smooth to="/#services">
-                Services
-            </HashLink>
-            <HashLink className="px-4 py-2 text-sm font-medium text-surface-800 hover:text-primary-600 transition-colors duration-200 relative after:absolute after:bottom-0 after:left-4 after:right-4 after:h-0.5 after:bg-primary-500 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" to="/">
-                Portfolio
-            </HashLink>
-            <HashLink className="px-4 font-extrabold text-gray-500 hover:text-zinc-900" to="/contact#contact">
-                Contact Us
-            </HashLink>
-            <HashLink className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-auto px-6 py-3 shadow-xl rounded-xl" smooth to="/get-demo#demo">
-                Demo our products
+            <HashLink className={linkCls} smooth to="/#about">About</HashLink>
+            <HashLink className={linkCls} smooth to="/#services">Services</HashLink>
+            <HashLink className={linkCls} smooth to="/#portfolio">Portfolio</HashLink>
+            <HashLink className={linkCls} to="/networks/xpr">Networks</HashLink>
+            <HashLink className={linkCls} to="/contact">Contact</HashLink>
+            <HashLink
+                className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 text-sm font-semibold text-white bg-orange-500 hover:bg-orange-400 rounded-lg transition-colors duration-200 font-mono"
+                smooth to="/get-demo#demo"
+            >
+                <span className="w-1.5 h-1.5 rounded-full bg-white/50" />
+                get-demo
             </HashLink>
         </>
-    )
-}
+    );
+};
 
 export default NavLinks;

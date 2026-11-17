@@ -13,6 +13,8 @@ import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
 import NetworkXpr from './pages/NetworkXpr';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import Blog from './pages/Blog';
+import PostQuantumSignatures from './pages/blog/PostQuantumSignatures';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -45,6 +47,8 @@ function App() {
             <Route path="/get-demo" element={<DemoProduct />} />
             <Route path="/networks/xpr" element={<NetworkXpr />} />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/post-quantum-blockchain-signatures" element={<PostQuantumSignatures />} />
           </Routes>
         </ScrollToTop>
       </Router>

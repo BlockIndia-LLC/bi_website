@@ -29,6 +29,8 @@ BlocksIndia operates block producer / validator nodes (as **protonind**) with a 
 
 - [Home](https://blocksindia.com/) — company overview, services, XPR ecosystem showcase
 - [XPR Network](https://blocksindia.com/networks/xpr) — protonind validator stats, live tools, why/how to vote
+- [Blog](https://blocksindia.com/blog) — plain-language explainers on blockchain infrastructure and security
+- [Your Digital Signature May Have an Expiry Date](https://blocksindia.com/blog/post-quantum-blockchain-signatures) — what quantum computers could mean for blockchain signatures, and how networks can prepare
 - [Contact](https://blocksindia.com/contact) — general inquiries
 - [Get a Demo](https://blocksindia.com/get-demo) — request a product demo (DeFi, NFT, Gaming, Smart Contracts)
 - [Privacy Policy](https://blocksindia.com/privacy-policy) — covers blocksindia.com and all published apps

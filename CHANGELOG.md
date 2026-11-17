@@ -2,6 +2,15 @@
 
 All notable changes to the BlocksIndia website project.
 
+## [2.1.0] - November 17, 2026
+
+### Added
+- Blog section: listing page at `/blog` (`src/pages/Blog.js`), post index in `src/data/posts.js`
+- First post at `/blog/post-quantum-blockchain-signatures` (`src/pages/blog/PostQuantumSignatures.js`) with two in-page animations (signature cracking, key rotation)
+- `.prose-blog` article styles in `src/index.css`
+- Blog links in the navbar and footer; blog URLs in `sitemap.xml` and `llms.txt`
+- Vercel Web Analytics page-view tracking (`src/analytics.js`, production only). Requires Web Analytics to be enabled for the project in the Vercel dashboard
+
 ## [2.0.1] - February 16, 2026
 
 ### Added

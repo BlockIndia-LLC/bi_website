@@ -73,6 +73,27 @@
   .prose-policy strong {
     @apply text-white/75 font-semibold;
   }
+
+  /* Blog article prose */
+  .prose-blog p {
+    @apply text-base text-white/60 leading-relaxed mb-4;
+  }
+  .prose-blog h2 {
+    @apply text-xl md:text-2xl font-extrabold text-white mt-10 mb-3;
+  }
+  .prose-blog ul {
+    @apply space-y-2 mb-4 ml-1;
+  }
+  .prose-blog ul li {
+    @apply text-base text-white/60 leading-relaxed pl-4 relative;
+  }
+  .prose-blog ul li::before {
+    content: '›';
+    @apply absolute left-0 text-orange-400/60 font-mono;
+  }
+  .prose-blog strong {
+    @apply text-white/90 font-semibold;
+  }
 }
 
 /* ── Animations ──────────────────────────────────── */

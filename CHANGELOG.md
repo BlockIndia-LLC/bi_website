@@ -2,6 +2,12 @@
 
 All notable changes to the BlocksIndia website project.
 
+## [2.2.0] - November 18, 2026
+
+### Added
+- Second blog post at `/blog/open-hardware-antelope-signer` (`src/pages/blog/OpenHardwareAntelopeSigner.js`): the open-hardware Antelope signer, with a touch-to-sign animation and links to the XPR Network and Telos testnet transactions
+- `/signer` shortlink to that post (`vercel.json`); post added to `src/data/posts.js`, `sitemap.xml` and `llms.txt`
+
 ## [2.1.0] - November 17, 2026
 
 ### Added

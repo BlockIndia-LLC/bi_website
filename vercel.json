@@ -5,6 +5,11 @@
       "source": "/pq",
       "destination": "/blog/post-quantum-blockchain-signatures",
       "permanent": false
+    },
+    {
+      "source": "/signer",
+      "destination": "/blog/open-hardware-antelope-signer",
+      "permanent": false
     }
   ]
 }

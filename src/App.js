@@ -15,6 +15,7 @@ import NetworkXpr from './pages/NetworkXpr';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Blog from './pages/Blog';
 import PostQuantumSignatures from './pages/blog/PostQuantumSignatures';
+import OpenHardwareAntelopeSigner from './pages/blog/OpenHardwareAntelopeSigner';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
@@ -49,6 +50,7 @@ function App() {
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/post-quantum-blockchain-signatures" element={<PostQuantumSignatures />} />
+            <Route path="/blog/open-hardware-antelope-signer" element={<OpenHardwareAntelopeSigner />} />
           </Routes>
         </ScrollToTop>
       </Router>
